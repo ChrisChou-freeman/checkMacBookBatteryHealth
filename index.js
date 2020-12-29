@@ -10,10 +10,11 @@ function main(){
   const splitInformation = batteryInformation.split(',')
   const filterInformation = splitInformation.filter((i)=>{return i.startsWith('"CycleCount"')});
   const remainCycleCount = filterInformation[0].split('=')[1];
+  const batteryHeanlthPercent = Math.floor(remainCycleCount/healthCount * 0.2 * 100) + 80;
   const content = `
     use cycle count: ${healthCount-remainCycleCount}
     remians cycle count: ${remainCycleCount}
-    battery health: ${Math.floor(remainCycleCount/healthCount * 0.2 * 100) + 80}%
+    battery health: ${batteryHeanlthPercent}%
   `;
   console.log(content);
 }
