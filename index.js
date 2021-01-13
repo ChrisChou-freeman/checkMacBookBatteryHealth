@@ -1,10 +1,12 @@
+
 'use strict';
+
 const {execSync} = require('child_process');
-const GET_BATTERT_HEALTH_COMMAND = 'ioreg -l | grep Capacity | grep BatteryData';
+const GET_BATTERY_HEALTH_COMMAND = 'ioreg -l | grep Capacity | grep BatteryData';
 const healthCount = 1000;
 
 function main(){
-  const result = execSync(GET_BATTERT_HEALTH_COMMAND);
+  const result = execSync(GET_BATTERY_HEALTH_COMMAND);
   const stringInformation = result.toString();
   const batteryInformation = stringInformation.split(' = ')[1].trim();
   const splitInformation = batteryInformation.split(',')
