@@ -21,4 +21,6 @@ function main(){
   console.log(content);
 }
 
-main();
+if(require.main.filename == __filename){
+  main();
+}
