@@ -1,7 +1,7 @@
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-                    Version 2, December 2020 
+                    Version 2, December 2021
 
- Copyright (C) 2020 Chris Chou <zhou.guanwei@foxmail.com>
+ Copyright (C) 2021 Chris Chou <zhou.guanwei@foxmail.com>
 
  Everyone is permitted to copy and distribute verbatim or modified
  copies of this license document, and changing it is allowed as long
