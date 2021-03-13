@@ -1,9 +1,8 @@
 about
 ----------------
 
-check your MacBook battery health and show information in your command line,
+show MacBook battery health information in your command line,
 only support Produced in 2010 and beyond MacBook
-
 
 requirement
 ---------------
@@ -16,4 +15,18 @@ run
 cd savedYourPath/batteryHealthOfMac
 
 node .
+```
+
+or install
+---------------
+
+you can install this code in your command line environment with npm
+
+```shell
+cd savedYourPath/batteryHealthOfMac
+npm install -g
+
+# then run
+checkBatteryHealth
+
 ```
