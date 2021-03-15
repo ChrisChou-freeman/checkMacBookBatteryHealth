@@ -14,10 +14,11 @@ function main(){
   const batteryInformation = stringInformation.split(' = ')[1].trim();
   const splitInformation = batteryInformation.split(',');
   const filterInformation = splitInformation.filter((i)=>{return i.startsWith('"CycleCount"')});
-  const remainCycleCount = filterInformation[0].split('=')[1];
+  const usedCycleCount = filterInformation[0].split('=')[1];
+  const remainCycleCount = healthCount - usedCycleCount;
   const batteryHeanlthPercent = Math.floor(remainCycleCount/fullCycleCount* 100) + 80;
   const content = `
-    used charge cycle count🔌: ${healthCount-remainCycleCount}
+    used charge cycle count🔌: ${usedCycleCount}
     remians charge cycle count: ${remainCycleCount}
     battery health🔋: ${batteryHeanlthPercent}%
   `;
