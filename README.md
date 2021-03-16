@@ -12,7 +12,7 @@ node>=8
 run
 ---------------
 ```shell
-cd savedYourPath/batteryHealthOfMac
+cd savedYourPath/checkMacBookBatteryHealth
 
 node .
 ```
@@ -23,7 +23,7 @@ or install
 you can install this code in your command line environment with npm
 
 ```shell
-cd savedYourPath/batteryHealthOfMac
+cd savedYourPath/checkMacBookBatteryHealth
 npm install -g
 
 # then run
