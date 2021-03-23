@@ -2,7 +2,7 @@
 
 'use strict';
 
-const {execSync} = require('child_process');
+import {execSync} from 'child_process';
 
 const GET_BATTERY_HEALTH_COMMAND = 'ioreg -l | grep Capacity | grep BatteryData';
 const healthCount = 1000;
@@ -25,6 +25,5 @@ function main(){
   console.log(content);
 }
 
-if(require.main.filename == __filename){
-  main();
-}
+console.log(import.meta.url);
+main();
