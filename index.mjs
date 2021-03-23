@@ -25,5 +25,4 @@ function main(){
   console.log(content);
 }
 
-console.log(import.meta.url);
 main();
