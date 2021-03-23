@@ -2,7 +2,7 @@
 
 'use strict';
 
-import {execSync} from 'child_process';
+const {execSync} = require('child_process');
 
 const GET_BATTERY_HEALTH_COMMAND = 'ioreg -l | grep Capacity | grep BatteryData';
 const healthCount = 1000;

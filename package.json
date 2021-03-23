@@ -1,9 +1,8 @@
 {
   "name": "batteryHealthOfMac",
   "version": "1.0.0",
-  "type": "module",
   "description": "check MacBook battery health",
-  "main": "index.mjs",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +10,7 @@
   "author": "",
   "license": "WTFPL",
   "bin": {
-    "checkBatteryHealth": "./index.mjs"
+    "checkBatteryHealth": "./index.js"
   },
   "dependencies": {}
 }
