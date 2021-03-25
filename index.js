@@ -1,8 +1,5 @@
 #!/usr/bin/env node
-
-'use strict';
-
-const {execSync} = require('child_process');
+import {execSync} from 'child_process';
 
 const GET_BATTERY_HEALTH_COMMAND = 'ioreg -l | grep Capacity | grep BatteryData';
 const healthCount = 1000;
