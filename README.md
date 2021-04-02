@@ -17,16 +17,16 @@ cd savedYourPath/checkMacBookBatteryHealth
 node .
 ```
 
-or install
+install 
 ---------------
 
 you can install this code in your command line environment with npm
 
 ```shell
-cd savedYourPath/checkMacBookBatteryHealth
-npm install -g
+npm install -g checkmacbatteryhealth
 
 # then run
 checkBatteryHealth
 
 ```
+

@@ -1,5 +1,5 @@
 {
-  "name": "batteryHealthOfMac",
+  "name": "checkmacbatteryhealth",
   "type": "module",
   "version": "1.0.0",
   "description": "check MacBook battery health",
@@ -9,6 +9,11 @@
   },
   "keywords": [],
   "author": "Chris",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChrisChou-freeman/checkMacBookBatteryHealth.git"
+  },
+  "homepage": "https://github.com/ChrisChou-freeman/checkMacBookBatteryHealth",
   "license": "WTFPL",
   "bin": {
     "checkBatteryHealth": "./index.js"
