@@ -7,7 +7,7 @@ only support Produced in 2010 and beyond MacBook
 requirement
 ---------------
 
-node>=8
+node>=14
 
 run
 ---------------
