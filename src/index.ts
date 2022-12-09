@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import {execSync} from 'child_process';
 
 const healthCount = 1000;
