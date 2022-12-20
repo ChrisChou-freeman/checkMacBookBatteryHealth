@@ -1,22 +1,15 @@
 {
   "name": "checkmacbookbatteryhealth",
   "version": "1.0.0",
-  "description": "about ----------------",
+  "description": "a macBook battery health checker",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc && node ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ChrisChou-freeman/checkMacBookBatteryHealth.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ChrisChou-freeman/checkMacBookBatteryHealth/issues"
-  },
+  "license": "WTFPL",
   "homepage": "https://github.com/ChrisChou-freeman/checkMacBookBatteryHealth#readme",
   "devDependencies": {
     "@types/node": "^18.11.12",
