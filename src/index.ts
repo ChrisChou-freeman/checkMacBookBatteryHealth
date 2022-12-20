@@ -11,9 +11,7 @@ interface BatteryInfo {
 
 function getHardwareInfomation(): string {
   const GET_BATTERY_HEALTH_COMMAND = 'ioreg -l | grep Capacity | grep BatteryData'
-  const result = execSync(GET_BATTERY_HEALTH_COMMAND)
-  const stringInformation = result.toString()
-  return stringInformation 
+  return execSync(GET_BATTERY_HEALTH_COMMAND).toString()
 }
 
 function parserInformation(info: string): BatteryInfo {
