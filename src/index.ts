@@ -17,10 +17,10 @@ function getHardwareInfomation(): string {
 }
 
 function parserInformation(info: string): BatteryInfo {
-  const batteryInformation = info.split(' = ')[1].trim()
-  const splitInformation = batteryInformation.split(',')
-  const filterInformation = splitInformation.filter((i)=>{return i.startsWith('"CycleCount"')})
-  const usedCycleCount = parseInt(filterInformation[0].split('=')[1])
+  const batteryInformation = info.split(' = ')[1].trim().split(',').filter(
+    (i)=>{return i.startsWith('"CycleCount"')}
+  )
+  const usedCycleCount = parseInt(batteryInformation[0].split('=')[1])
   const remainCycleCount = healthCount - usedCycleCount
   const batteryHealthPercent = Math.floor(remainCycleCount/fullCycleCount* 100) + 80
   return {usedCycleCount, remainCycleCount, batteryHealthPercent}
